@@ -1,0 +1,14 @@
+.say_hello {
+    margin-top: 100px;
+    text-align: center;
+    width: 1000px;
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+
+    height: 500px;
+
+    border: 1px solid black;
+
+
+}
