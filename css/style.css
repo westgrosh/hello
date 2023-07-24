@@ -1,0 +1,70 @@
+@font-face {
+    font-family: Blue-Curve;
+    src: url('../fonts/Blue-Curve.ttf');
+}
+
+body {
+    background: rgb(33, 37, 41);
+    color: #fafafa;
+    font-family: Blue-Curve;
+    padding: 0px 20px 0px 20px;
+}
+
+.some_info p:first-child {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar {
+    background: #1d1d1d;
+    color: #fafafa;
+}
+
+.my_info {
+    display: flex;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+}
+
+.some_info {
+    width: 400px;
+    padding: 20px;
+}
+
+.my_name {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.my_photo img {
+    height: 50%;
+
+    border-radius: 130px;
+    border: 2px solid #eee;
+}
+
+container {
+    margin: 10px 0px 10px 0px;
+    padding: 4px;
+}
+
+#projects_cards_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project_card {
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 4px;
+    max-width: 400px;
+    margin: 10px 10px 10px 10px;
+}
+
+.project_card div{
+    padding: 4px;
+}

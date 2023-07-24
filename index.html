@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Hello Page</title>
+
+    <link rel="icon" href="./img/bear.png">
+
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Welcome page</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Главная</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Проекты
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#company-projects">Корпоративные веб-приложения</a>
+                        <a class="dropdown-item" href="#">Учебные</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Мой питомец</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://t.me/westgrosh">Телеграм</a>
+                </li>
+            </ul>
+            <!--<form class="form-inline my-2 my-lg-0" style="display: flex;">
+                <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
+                    style="margin-left: 4px;">Поиск</button>
+            </form>-->
+        </div>
+    </nav>
+
+    <div class="my_info">
+        <div class="my_photo">
+            <img src="./img/my_photo.jpg">
+        </div>
+        <div class="some_info">
+            <p><span style="color: #ff3559;">Привет,</span> я Владимир</p>
+            <p>Full-stack разработчик</p>
+            <p>Tech-stack:</p>
+            <ul>
+                <li>Java Spring Framework</li>
+                <li>PL/SQL Oracle</li>
+                <li>HTML 5</li>
+            </ul>
+            <p id="my_exp"></p>
+        </div>
+    </div>
+
+    <div>
+        <h5>Корпоративные проекты</h5>
+        <hr>
+        <div id="projects_cards_container">
+            <div class="project_card">
+                <div class="project_name">Бронирование переговорных комнат</div>
+                <div class="project_info">Система позволяет бронировать переговорные комнаты, путем создания заявок и
+                    согласования с администраторами.</div>
+                <div class="project_stack">
+                    Использованные технологии
+                    <ul>
+                        <li>Java Servlets</li>
+                        <li>Oracle DB</li>
+                        <li>HTML 5</li>
+                        <li>jQuery</li>
+                        <li>FullCalendar.js</li>
+                        <li>DataTables.js</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project_card">
+                <div class="project_name">Система учета ознакомлений</div>
+                <div class="project_info">Система позволяет вести базу ознакомлений с определенными документами.
+                    Интерфейс реализован с помощью таблиц и модальных окон</div>
+
+                <div class="project_stack">
+                    Использованные технологии
+                    <ul>
+                        <li>Java Servlets</li>
+                        <li>Oracle DB</li>
+                        <li>HTML 5</li>
+                        <li>jQuery</li>
+                        <li>DataTables.js</li>
+                        <li>ПП Парус 8 Web API</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project_card">
+                <div class="project_name">Система технической поддержки пользователей</div>
+                <div class="project_info">Система позволяет просматривать базу авторизации пользователей на разных
+                    компьютерах во внутреней сети.</div>
+
+                <div class="project_stack">
+                    Использованные технологии
+                    <ul>
+                        <li>Java Servlets</li>
+                        <li>MySQL DB</li>
+                        <li>HTML 5</li>
+                        <li>jQuery</li>
+                        <li>DataTables.js</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <container>
+        <h5>Учебные</h5>
+        <hr>
+        <div id="projects_cards_container">
+            <div class="project_card">
+                <div class="project_name">Подсистема 3D визуализации больших потоков данных</div>
+                <div class="project_info">Подсистема представляет собой веб-интерфейс. Последний позволяет просматривать
+                    визуализацию полета самолета с выводом дополнительной аналитики.</div>
+                <div class="project_stack">
+                    Использованные технологии
+                    <ul>
+                        <li>HTML 5</li>
+                        <li>jQuery</li>
+                        <li>Сesium.js</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </container>
+
+</body>
+
+<script src="./js/main.js"></script>
+
+
+
+</html>
