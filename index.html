@@ -27,7 +27,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css?1">
 </head>
 
 <body>
@@ -51,7 +51,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#corporate">Корпоративные веб-приложения</a>
                         <a class="dropdown-item" href="#educational">Учебные</a>
-                        
+
                     </div>
                 </li>
                 <li class="nav-item">
@@ -74,12 +74,12 @@
             <img src="./img/my_photo.jpg">
         </div>
         <div class="some_info">
-            <p><span style="color: #ff3559;">Привет,</span> я Владимир Грошев</p>
-            <p>Full-stack разработчик</p>
-            <p>Tech-stack:</p>
+            <p><span style="color: #ff3559;">Привет,</span> я Владимир Грошев </p>
+            Full-stack разработчик <br>
+            Tech-stack: <br>
             <ul>
                 <li>Java Spring Framework</li>
-                <li>PL/SQL Oracle</li>
+                <li>Oracle PL/SQL</li>
                 <li>HTML 5</li>
             </ul>
             <p id="my_exp"></p>
@@ -87,22 +87,24 @@
     </div>
 
     <div>
-        <h5 class="part_header">Образование:</h5>
-        <ul>
-            <li>Высшее / МГТУ им. Н.Э. Баумана / Информатика и вычислительная техника / Магистр (2022)</li>
-            <li>Высшее / МАИ / Информационные системы и технологии / Бакалавр (2020)</li>
-        </ul>
+        <div class="part_header" id="education" onclick="openSection(this.id)">Образование</div>
+        <div>
+            <ul>
+                <li>Высшее / МГТУ им. Н.Э. Баумана / Информатика и вычислительная техника / Магистр (2022)</li>
+                <li>Высшее / МАИ / Информационные системы и технологии / Бакалавр (2020)</li>
+            </ul>
+        </div>
     </div>
 
     <div>
-        <h5 class="part_header">Корпоративные проекты</h5>
-        <div class="projects_cards_container" id="corporate">
+        <div class="part_header" id="corporate" onclick="openSection(this.id)">Корпоративные проекты</div>
+        <div class="projects_cards_container">
             <div class="project_card">
                 <div class="project_name">Бронирование переговорных комнат</div>
                 <div class="project_info">Система позволяет бронировать переговорные комнаты, путем создания заявок и
                     согласования с администраторами.</div>
                 <div class="project_stack">
-                    Использованные технологии
+                    Технологии:
                     <ul>
                         <li>Java Servlets</li>
                         <li>Oracle DB</li>
@@ -117,10 +119,10 @@
             <div class="project_card">
                 <div class="project_name">Система учета ознакомлений</div>
                 <div class="project_info">Система позволяет вести базу ознакомлений с определенными документами.
-                    Интерфейс реализован с помощью таблиц и модальных окон</div>
+                    Интерфейс реализован с использованием функциональных таблиц и модальных окон. </div>
 
                 <div class="project_stack">
-                    Использованные технологии
+                    Технологии:
                     <ul>
                         <li>Java Servlets</li>
                         <li>Oracle DB</li>
@@ -138,7 +140,7 @@
                     компьютерах во внутреней сети.</div>
 
                 <div class="project_stack">
-                    Использованные технологии
+                    Технологии:
                     <ul>
                         <li>Java Servlets</li>
                         <li>MySQL DB</li>
@@ -152,14 +154,15 @@
     </div>
 
     <container>
-        <h5 class="part_header">Учебные</h5>
-        <div class="projects_cards_container" id="educational">
+        <div class="part_header" id="educational" onclick="openSection(this.id)">Учебные</div>
+        <div class="projects_cards_container">
             <div class="project_card">
                 <div class="project_name">Подсистема 3D визуализации больших потоков данных</div>
-                <div class="project_info">Проект выпускной квалификационной работы. Подсистема представляет собой веб-интерфейс, позволяющий просматривать
+                <div class="project_info">Проект выпускной квалификационной работы. Подсистема представляет собой
+                    веб-интерфейс, позволяющий просматривать
                     визуализацию полета самолета с выводом дополнительной аналитики.</div>
                 <div class="project_stack">
-                    Использованные технологии
+                    Технологии:
                     <ul>
                         <li>HTML 5</li>
                         <li>jQuery</li>
