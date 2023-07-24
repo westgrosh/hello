@@ -20,11 +20,23 @@ body {
     color: #fafafa;
 }
 
+#navbarSupportedContent {
+    background-color: #666666;
+    border-radius: 20px;
+    padding: 4px;
+}
+
+.part_header {
+    background-color: #1d1d1d;
+    border-radius: 20px;
+    padding: 9px;
+}
+
 .my_info {
     display: flex;
     margin: auto;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 300px;
 }
 
 .some_info {
@@ -41,21 +53,27 @@ body {
 }
 
 .my_photo img {
-    height: 50%;
-
+    height: 80%;
     border-radius: 130px;
     border: 2px solid #eee;
 }
 
-container {
-    margin: 10px 0px 10px 0px;
-    padding: 4px;
-}
 
-#projects_cards_container {
+.projects_cards_container {
     display: flex;
     justify-content: space-between;
 }
+
+@media (max-width: 480px) {
+    .projects_cards_container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
 
 .project_card {
     border: 1px solid white;
@@ -65,6 +83,6 @@ container {
     margin: 10px 10px 10px 10px;
 }
 
-.project_card div{
+.project_card div {
     padding: 4px;
 }

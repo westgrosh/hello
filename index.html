@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Hello Page</title>
 
-    <link rel="icon" href="./img/bear.png">
+    <link rel="icon" href="https://github.com/fluidicon.png">
 
 
     <!-- bootstrap -->
@@ -49,14 +49,16 @@
                         Проекты
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#company-projects">Корпоративные веб-приложения</a>
-                        <a class="dropdown-item" href="#">Учебные</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Мой питомец</a>
+                        <a class="dropdown-item" href="#corporate">Корпоративные веб-приложения</a>
+                        <a class="dropdown-item" href="#educational">Учебные</a>
+                        
                     </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://t.me/westgrosh">Телеграм</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/westgrosh">GitHub</a>
                 </li>
             </ul>
             <!--<form class="form-inline my-2 my-lg-0" style="display: flex;">
@@ -72,7 +74,7 @@
             <img src="./img/my_photo.jpg">
         </div>
         <div class="some_info">
-            <p><span style="color: #ff3559;">Привет,</span> я Владимир</p>
+            <p><span style="color: #ff3559;">Привет,</span> я Владимир Грошев</p>
             <p>Full-stack разработчик</p>
             <p>Tech-stack:</p>
             <ul>
@@ -85,9 +87,16 @@
     </div>
 
     <div>
-        <h5>Корпоративные проекты</h5>
-        <hr>
-        <div id="projects_cards_container">
+        <h5 class="part_header">Образование:</h5>
+        <ul>
+            <li>Высшее / МГТУ им. Н.Э. Баумана / Информатика и вычислительная техника / Магистр (2022)</li>
+            <li>Высшее / МАИ / Информационные системы и технологии / Бакалавр (2020)</li>
+        </ul>
+    </div>
+
+    <div>
+        <h5 class="part_header">Корпоративные проекты</h5>
+        <div class="projects_cards_container" id="corporate">
             <div class="project_card">
                 <div class="project_name">Бронирование переговорных комнат</div>
                 <div class="project_info">Система позволяет бронировать переговорные комнаты, путем создания заявок и
@@ -143,12 +152,11 @@
     </div>
 
     <container>
-        <h5>Учебные</h5>
-        <hr>
-        <div id="projects_cards_container">
+        <h5 class="part_header">Учебные</h5>
+        <div class="projects_cards_container" id="educational">
             <div class="project_card">
                 <div class="project_name">Подсистема 3D визуализации больших потоков данных</div>
-                <div class="project_info">Подсистема представляет собой веб-интерфейс. Последний позволяет просматривать
+                <div class="project_info">Проект выпускной квалификационной работы. Подсистема представляет собой веб-интерфейс, позволяющий просматривать
                     визуализацию полета самолета с выводом дополнительной аналитики.</div>
                 <div class="project_stack">
                     Использованные технологии
