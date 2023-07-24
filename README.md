@@ -1,2 +1,3 @@
 # hello
-https://westgrosh.github.io/hello-main/
+https://westgrosh.github.io/hello/
+
