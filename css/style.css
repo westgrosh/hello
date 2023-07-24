@@ -40,6 +40,7 @@ body {
     display: flex;
     justify-content: center;
     height: 300px;
+    margin: 40px;
 }
 
 .some_info {
@@ -62,9 +63,16 @@ body {
 }
 
 
+
+.section_name{
+    font-size: 24px;
+    
+}
+
+
 .projects_cards_container {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
 }
 
 .project_card {
@@ -90,13 +98,33 @@ body {
 
 .project_card li {
     display: inline-block ;
-    border: 1px solid #ff3559;;
+    border: 1px solid #ff3559;
     border-radius: 4px;
     margin: 2px;
     padding: 4px;
 }
 
+.project_demo div, img, a{
+    display: inline;
+    color: #eee;
+    text-decoration: none;
+}
 
+.project_demo:hover div, img, a{
+    color: red;
+}
+
+
+
+main {
+    max-width: 1200px;
+    padding: 0px 40px 0px 40px;    
+    margin: auto;
+}
+
+section {
+    margin: 40px 0px 40px 0px;
+}
 
 @media (max-width: 480px) {
 
@@ -107,11 +135,20 @@ body {
         padding: 0px 5px 0px 5px;
     }
 
+    main {
+        padding: 0px;    
+    }
+
+    section{
+        margin: 0px;
+    }
+
     .my_info {
         display: flex;
         justify-content: flex-start;
         width: 100%;
         height: auto;
+        margin: 0px;
     }
 
     .some_info {
@@ -135,8 +172,9 @@ body {
     }
 
     #navbarSupportedContent {
-        background-color: #666666;
+        color: #eee;
         border-radius: 20px;
+        border: 1px solid #eee;
         padding: 0px 20px 0px 20px;
         margin-top: 5px;
     }
