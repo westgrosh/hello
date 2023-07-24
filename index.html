@@ -49,7 +49,8 @@
                         Проекты
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#corporate" onclick="openSection('corporate')">Корпоративные веб-приложения</a>
+                        <a class="dropdown-item" href="#corporate" onclick="openSection('corporate')">Корпоративные
+                            веб-приложения</a>
                         <a class="dropdown-item" href="#educational" onclick="openSection('educational')">Учебные</a>
 
                     </div>
@@ -69,110 +70,123 @@
         </div>
     </nav>
 
-    <div class="my_info">
-        <div class="my_photo">
-            <img src="./img/my_photo.jpg">
-        </div>
-        <div class="some_info">
-            <p><span style="color: #ff3559;">Привет,</span> я Владимир Грошев </p>
-            Full-stack разработчик <br>
-            Tech-stack: <br>
-            <ul>
-                <li>Java Spring Framework</li>
-                <li>Oracle PL/SQL</li>
-                <li>HTML 5</li>
-            </ul>
-            <p id="my_exp"></p>
-        </div>
-    </div>
+    <main>
 
-    <div>
-        <button class="part_header" id="education" >Образование</button>
-        <div class="projects_cards_container">
-            <ul>
-                <li>Высшее / МГТУ им. Н.Э. Баумана / Информатика и вычислительная техника / Магистр (2022)</li>
-                <li>Высшее / МАИ / Информационные системы и технологии / Бакалавр (2020)</li>
-            </ul>
-        </div>
-    </div>
-
-    <div>
-        <button class="part_header" id="corporate" >Корпоративные проекты</button>
-        <div class="projects_cards_container">
-            <div class="project_card">
-                <div class="project_name">Бронирование переговорных комнат</div>
-                <div class="project_info">Система позволяет бронировать переговорные комнаты, путем создания заявок и
-                    согласования с администраторами.</div>
-                <div class="project_stack">
-                    Технологии:
-                    <ul>
-                        <li>Java Servlets</li>
-                        <li>Oracle DB</li>
-                        <li>HTML 5</li>
-                        <li>jQuery</li>
-                        <li>FullCalendar.js</li>
-                        <li>DataTables.js</li>
-                    </ul>
-                </div>
+        <div class="my_info">
+            <div class="my_photo">
+                <img src="./img/my_photo.jpg">
             </div>
-
-            <div class="project_card">
-                <div class="project_name">Система учета ознакомлений</div>
-                <div class="project_info">Система позволяет вести базу ознакомлений с определенными документами.
-                    Интерфейс реализован с использованием функциональных таблиц и модальных окон. </div>
-
-                <div class="project_stack">
-                    Технологии:
-                    <ul>
-                        <li>Java Servlets</li>
-                        <li>Oracle DB</li>
-                        <li>HTML 5</li>
-                        <li>jQuery</li>
-                        <li>DataTables.js</li>
-                        <li>ПП Парус 8 Web API</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="project_card">
-                <div class="project_name">Система технической поддержки пользователей</div>
-                <div class="project_info">Система позволяет просматривать базу авторизации пользователей на разных
-                    компьютерах во внутреней сети.</div>
-
-                <div class="project_stack">
-                    Технологии:
-                    <ul>
-                        <li>Java Servlets</li>
-                        <li>MySQL DB</li>
-                        <li>HTML 5</li>
-                        <li>jQuery</li>
-                        <li>DataTables.js</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <container>
-        <button class="part_header" id="educational">Учебные</button>
-        <div class="projects_cards_container">
-            <div class="project_card">
-                <div class="project_name">Подсистема 3D визуализации больших потоков данных</div>
-                <div class="project_info">Проект выпускной квалификационной работы. Подсистема представляет собой
-                    веб-интерфейс, позволяющий просматривать
-                    визуализацию полета самолета с выводом дополнительной аналитики.</div>
-                <div class="project_stack">
-                    Технологии:
-                    <ul>
-                        <li>HTML 5</li>
-                        <li>jQuery</li>
-                        <li>Сesium.js</li>
-                    </ul>
-                </div>
+            <div class="some_info">
+                <p><span style="color: #ff3559;">Привет,</span> я Владимир Грошев </p>
+                Full-stack разработчик <br>
+                Tech-stack: <br>
+                <ul>
+                    <li>Java Spring Framework</li>
+                    <li>Oracle PL/SQL</li>
+                    <li>HTML 5</li>
+                </ul>
+                <p id="my_exp"></p>
             </div>
         </div>
 
-    </container>
+        <section>
+            <div class="section_name">Образование &#127891;</div>
+            <button class="part_header" id="education_btn">Образование</button>
+            <div class="projects_cards_container">
+                <ul>
+                    <li>Высшее / МГТУ им. Н.Э. Баумана / Информатика и вычислительная техника / Магистр (2022)</li>
+                    <li>Высшее / МАИ / Информационные системы и технологии / Бакалавр (2020)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="section_name">Корпоративные проекты &#128188;</div>
+            <button class="part_header" id="corporate_btn">Корпоративные проекты</button>
+            <div class="projects_cards_container">
+                <div class="project_card">
+                    <div class="project_name">Бронирование переговорных комнат</div>
+                    <div class="project_info">Система позволяет бронировать переговорные комнаты, путем создания заявок
+                        с последующим согласованием с администраторами.</div>
+                    <div class="project_stack">
+                        Технологии:
+                        <ul>
+                            <li>Java Servlets</li>
+                            <li>Oracle DB</li>
+                            <li>HTML 5</li>
+                            <li>jQuery</li>
+                            <li>FullCalendar.js</li>
+                            <li>DataTables.js</li>
+                        </ul>
+                    </div>
+                    <div class="project_demo" id="booking-app">
+                        <a href="javascript:alert('В разработке')">
+                            <div class="demo-text">Демо</div>
+                            <img src="https://global-uploads.webflow.com/617bb8097f7181c68177be89/628f1fc3f2037f5e775ed47f_Arrow%201%20(Stroke)%20(3).svg"
+                                loading="lazy" alt="" class="case-item__link-arrow">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project_card">
+                    <div class="project_name">Система учета ознакомлений</div>
+                    <div class="project_info">Система позволяет вести базу ознакомлений с определенными документами.
+                        Интерфейс реализован с использованием функциональных таблиц и модальных окон. </div>
+
+                    <div class="project_stack">
+                        Технологии:
+                        <ul>
+                            <li>Java Servlets</li>
+                            <li>Oracle DB</li>
+                            <li>HTML 5</li>
+                            <li>jQuery</li>
+                            <li>DataTables.js</li>
+                            <li>ПП Парус 8 Web API</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project_card">
+                    <div class="project_name">Система технической поддержки пользователей</div>
+                    <div class="project_info">Система позволяет просматривать базу авторизации пользователей на разных
+                        компьютерах во внутреней сети.</div>
+
+                    <div class="project_stack">
+                        Технологии:
+                        <ul>
+                            <li>Java Servlets</li>
+                            <li>MySQL DB</li>
+                            <li>HTML 5</li>
+                            <li>jQuery</li>
+                            <li>DataTables.js</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section_name">Учебные проекты &#128218;</div>
+            <button class="part_header" id="educational_btn">Учебные</button>
+            <div class="projects_cards_container">
+                <div class="project_card">
+                    <div class="project_name">Подсистема 3D визуализации больших потоков данных</div>
+                    <div class="project_info">Проект выпускной квалификационной работы. Подсистема представляет собой
+                        веб-интерфейс, позволяющий просматривать
+                        визуализацию полета самолета с выводом дополнительной аналитики.</div>
+                    <div class="project_stack">
+                        Технологии:
+                        <ul>
+                            <li>HTML 5</li>
+                            <li>jQuery</li>
+                            <li>Сesium.js</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
 </body>
 

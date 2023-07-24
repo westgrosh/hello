@@ -16,12 +16,19 @@ function compute_date() {
 function checkMediaQuery(){
     if ( window.innerWidth < 480 ) {
         $('.projects_cards_container').hide();
+        
+        $('.section_name').hide();
+        $('.part_header').show();
     } else {
         $('.projects_cards_container').show();
+        
+        $('.section_name').show();
+        $('.part_header').hide();
     }
 }
 
+window.addEventListener('resize', checkMediaQuery);
+
 $('.part_header').click( function(){
-    $(this).next('.projects_cards_container').toggle();
-    
+    $(this).next('.projects_cards_container').toggle();  
 })
