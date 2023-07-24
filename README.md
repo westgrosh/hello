@@ -1,2 +1,2 @@
 # hello
-https://westgrosh.github.io/hello/
+https://westgrosh.github.io/hello-main/
