@@ -24,5 +24,5 @@ function checkMediaQuery() {
 window.addEventListener('resize', checkMediaQuery);
 
 function openSection(id){
-    $("#"+id).next("div").toggle();
+    $("#"+id).next(".projects_cards_container").toggle();
 }
