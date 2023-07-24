@@ -13,16 +13,6 @@ function compute_date() {
     $('#my_exp').html('Опыт: ' + diff_time + ' мес.');
 }
 
-function checkMediaQuery() {
-    if (window.innerWidth < 480) {
-        $(".projects_cards_container").hide();
-    } else {
-        $(".projects_cards_container").show();
-    }
-}
-
-window.addEventListener('resize', checkMediaQuery);
-
-function openSection(id){
-    $("#"+id).next(".projects_cards_container").toggle();
-}
+$('#corporate').click(function () {
+    $('#corporate').next('.projects_cards_container').toggle();
+})

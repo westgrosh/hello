@@ -27,9 +27,11 @@ body {
 
 .part_header {
     background-color: #1d1d1d;
+    color: #fafafa;
     margin: 5px;
     border-radius: 20px;
     padding: 10px;
+    width: 100%;
 }
 
 .my_info {
