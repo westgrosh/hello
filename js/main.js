@@ -13,19 +13,17 @@ function compute_date() {
     $('#my_exp').html('Опыт: ' + diff_time + ' г.');
 }
 
+
 function checkMediaQuery() {
     if (window.innerWidth < 480) {
-        $('.projects_cards_container').hide();
 
-        $('.section_name').hide();
-        $('.part_header').show();
+        $('#my_photo').attr('')
+
     } else {
-        $('.projects_cards_container').show();
 
-        $('.section_name').show();
-        $('.part_header').hide();
     }
 }
+
 
 window.addEventListener('resize', checkMediaQuery);
 
