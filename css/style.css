@@ -56,8 +56,8 @@ body {
     font-weight: bold;
 }
 
-.my_photo img {
-    height: 80%;
+#main_photo {
+    max-width: 250px;
     border-radius: 130px;
     border: 2px solid #eee;
 }
@@ -144,7 +144,7 @@ section {
     }
 
     section {
-        margin: 0px;
+        margin: 15px;
     }
 
     .my_info {
@@ -173,6 +173,21 @@ section {
         height: 120px;
         border-radius: 130px;
         border: 2px solid #eee;
+    }
+
+    .the_col1 img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .the_col2 {
+        display: block;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
     }
 
     #navbarSupportedContent {

@@ -10,16 +10,23 @@ function compute_date() {
     var end_time = moment(today);
     var diff_time = end_time.diff(start_time, 'year');
 
-    $('#my_exp').html('Опыт: ' + diff_time + ' г.');
+    $('#my_exp').html('&emsp;"experience-years": ' + diff_time);
 }
 
 
 function checkMediaQuery() {
     if (window.innerWidth < 480) {
 
-        $('#my_photo').attr('')
+        $('.the_info').removeClass('row');
+        $('.the_col1').removeClass('col-4');
+        $('.the_col2').removeClass('col-8');
 
     } else {
+
+
+        $('.the_info').addClass('row');
+        $('.the_col1').addClass('col-4');
+        $('.the_col2').addClass('col-8');
 
     }
 }
