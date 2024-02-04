@@ -169,6 +169,10 @@ section {
         padding: 0;
     }
 
+    .project_card {
+        width: 100%;
+    }
+
     .my_photo img {
         height: 120px;
         border-radius: 130px;
