@@ -25,83 +25,155 @@ body {
     padding: 4px;
 }
 
-.part_header {
-    background-color: #1d1d1d;
-    color: #fafafa;
-    margin: 5px;
-    border-radius: 20px;
-    padding: 10px;
+
+
+#main_photo {
     width: 100%;
-    font-size: 18px;
-    text-align: left;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* Добавлен отступ снизу для визуального разделения */
 }
 
-.my_info {
+/* Стили для фотографии в левом блоке */
+.the_col1 {
+    text-align: center;
     display: flex;
-    justify-content: center;
-    height: 300px;
-    margin: 40px;
+    flex-direction: column;
+    align-items: center;
 }
 
-.some_info {
-    width: 400px;
+/* Стили для правого блока с JSON и информацией */
+.the_col2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
 }
 
-.my_name {
-    display: block;
-    width: 100%;
+/* Стили для JSON блока */
+.json_block {
+    font-family: 'Courier New', monospace;
+    background-color: #1d1d1d;
+    color: #abb2bf;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.3);
+    overflow-x: auto;
+}
+
+.code-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e2229;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.code-info {
+    padding: 10px;
+}
+
+.code-title {
+    color: #61dafb;
+    margin: 0;
+}
+
+.close-button {
+    cursor: pointer;
+    color: #abb2bf;
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+
+
+section {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
-    margin-bottom: 20px;
-    font-weight: bold;
 }
-
-#main_photo {
-    max-width: 250px;
-    border-radius: 130px;
-    border: 2px solid #eee;
-}
-
-
 
 .section_name {
-    font-size: 24px;
-
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
+.projects_cards_container ul {
+    list-style: none;
+    padding: 0;
+}
 
+.projects_cards_container li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Стили для контейнера проектов */
 .projects_cards_container {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
+
+/* Обновленные стили для каждой карточки проекта */
 .project_card {
-    border: 1px solid white;
-    border-radius: 10px;
-    padding: 4px;
-    width: 400px;
-    margin: 10px 10px 10px 10px;
+    border: 1px solid #ddd;
+    /* Обводка для отделения от других карточек */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Новая тень для выделения */
+
+    padding: 20px;
+    width: 500px;
+    /* Увеличил ширину карточки */
 }
 
-.project_card div {
-    padding: 4px;
-}
-
+/* Стили для названия проекта */
 .project_name {
-    color: #ff3559;
-    font-size: 18px;
+    color: #61dafb;
+    font-size: 1.3em;
+    margin-bottom: 10px;
 }
 
-.project_card ul {
-    padding-inline-start: 0px;
+/* Стили для информации о проекте */
+.project_info {
+    font-size: 1.1em;
+    color: #ddd;
+    margin-bottom: 15px;
 }
 
-.project_card li {
+/* Стили для списка технологий проекта */
+.project_stack {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Обновленные стили для каждой технологии в списке */
+.project_stack li {
     display: inline-block;
-    border: 1px solid #ff3559;
-    border-radius: 4px;
-    margin: 2px;
-    padding: 4px;
+    /* Отображение в строчку */
+    background-color: #61dafb;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 1em;
 }
 
 .project_demo div,
@@ -126,9 +198,7 @@ main {
     margin: auto;
 }
 
-section {
-    margin: 40px 0px 40px 0px;
-}
+
 
 @media (max-width: 480px) {
 
@@ -171,6 +241,7 @@ section {
 
     .project_card {
         width: 100%;
+        margin: 0px;
     }
 
     .my_photo img {
